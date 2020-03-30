@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <RootNamespace>Discordia</RootNamespace>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageId>CityOfHiddenApes.Discord.Core</PackageId>
+        <Title>CoH.Discord.Core</Title>
+        <Authors>Imbaker1234</Authors>
+        <Description>A wrapper library for Discord.NET. Supplying easy access to extensible Help Commands and rich Embed objects via annotations.</Description>
+        <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
+        <PackageIconUrl>https://i.ibb.co/z8px3T7/02-g.png</PackageIconUrl>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Discord.Net.Commands" Version="2.1.1" />
+      <PackageReference Include="Discord.Net.WebSocket" Version="2.1.1" />
+    </ItemGroup>
+
+</Project>
