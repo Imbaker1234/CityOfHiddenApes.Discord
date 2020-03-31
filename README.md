@@ -1,5 +1,5 @@
 # CityOfHiddenApes.Discord
-An open source library under the [https://github.com/Imbaker1234/CityOfHiddenApes.Discord/blob/master/README.md#mit-license](MIT license) (Use it as you see fit) designed with a mind to make the creation of Bots in **Discord.NET** faster and more extensible. 
+An open source library under the [MIT license (Use it as you see fit)] https://github.com/Imbaker1234/CityOfHiddenApes.Discord/blob/master/README.md#mit-license] designed with a mind to make the creation of Bots in **Discord.NET** faster and more extensible. 
 
 ### Find it on NuGet
 https://www.nuget.org/packages/CityOfHiddenApes.Discord.Core/
