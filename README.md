@@ -1,5 +1,5 @@
 # CityOfHiddenApes.Discord
-An open source library designed with a mind to make the creation of Bots in **Discord.NET** faster and more extensible. 
+An open source library under the MIT license (Use it as you see fit) designed with a mind to make the creation of Bots in **Discord.NET** faster and more extensible. 
 
 ### Find it on NuGet
 https://www.nuget.org/packages/CityOfHiddenApes.Discord.Core/
@@ -18,3 +18,13 @@ https://www.nuget.org/packages/CityOfHiddenApes.Discord.Core/
 ## Rich Embeds
 ##### Attributes corresponding to most embed properties.
 ![Highly detailed Embeds within easy reach.](https://i.ibb.co/71h95VQ/Embed-Attributes.png)
+
+
+
+## MIT License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
