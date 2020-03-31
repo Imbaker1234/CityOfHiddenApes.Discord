@@ -34,7 +34,7 @@
                         _desc = helpAttribute.Content;
                     else if (helpAttribute.GetType() == typeof(ExampleUseAttribute))
                         exampleUsages.Add(helpAttribute.Content);
-                    else if (helpAttribute.GetType() == typeof(HelpParameter))
+                    else if (helpAttribute.GetType() == typeof(AcceptedParameter))
                         acceptedParameters.Add(helpAttribute.Content);
                     else if (helpAttribute.GetType() == typeof(ImageAttribute))
                         _image = helpAttribute.Content;
