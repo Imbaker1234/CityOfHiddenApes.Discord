@@ -7,7 +7,7 @@ https://www.nuget.org/packages/CityOfHiddenApes.Discord.Core/
 ### Or feel free to fork this project and make it your own!
 
 ## Help Menus
-#### Enjoy out of the box help menu's. All for the cost of a few intuitive decorating attributes.
+#### Enjoy out of the box help menu's. All for the cost of a few intuitive decorating attributes. These embeds are gathered on startup by reflecting over your command modules on spin up
 ![Enjoy out of the box help menu's.](https://i.ibb.co/thgZfRc/Help-Attributes.png)
 
 #### Specify arguments quickly and easily. Including support for multi-argument/same-parameter patterns as shown.
