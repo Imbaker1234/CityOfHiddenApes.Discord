@@ -1,4 +1,4 @@
-﻿namespace Discordia.HelpAttributes
+﻿namespace CityOfHiddenApes.Discord.Core.HelpAttributes
 {
     using System;
     using System.Collections.Generic;

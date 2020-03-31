@@ -1,33 +1,22 @@
-﻿namespace Discordia.Arguments
+﻿namespace CityOfHiddenApes.Discord.Core.Arguments
 {
     using System;
     using System.Collections.Generic;
     using System.Text;
-    using Discord;
+    using Extensions;
+    using global::Discord;
     using Newtonsoft.Json;
 
     public class ReColor
     {
-        [JsonIgnore]
-        private Color? _value;
-
         private ReColors _setterEnum;
-            
-            
-        public ReColors SetterEnum
-        {
-            get => _setterEnum;
-            set
-            {
-                _value = GetColor(value);
-                _setterEnum = value;
-            }
-        }
+
+        [JsonIgnore] private Color? _value;
 
         public ReColor()
         {
         }
-        
+
         private ReColor(Color value)
         {
             _value = value;
@@ -46,6 +35,17 @@
         public ReColor(string color)
         {
             _value = GetColor(color);
+        }
+
+
+        public ReColors SetterEnum
+        {
+            get => _setterEnum;
+            set
+            {
+                _value = GetColor(value);
+                _setterEnum = value;
+            }
         }
 
         private static Dictionary<ReColors, Color> Colors { get; } = new Dictionary<ReColors, Color>
@@ -98,7 +98,7 @@
             {
                 var chars = sp.ToCharArray();
                 chars[0] = char.ToUpper(chars[0]);
-                sb.Append(chars);
+                sb.Append((char[]) chars);
             });
             return sb.ToString();
         }

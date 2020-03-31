@@ -1,4 +1,4 @@
-﻿namespace Discordia.Arguments
+﻿namespace CityOfHiddenApes.Discord.Core.Arguments
 {
     using System;
     using System.Text.RegularExpressions;

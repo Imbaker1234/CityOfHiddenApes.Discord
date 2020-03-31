@@ -1,10 +1,10 @@
-﻿namespace Discordia
+﻿namespace CityOfHiddenApes.Discord.Core.Extensions
 {
     using System;
     using System.Linq;
     using System.Threading.Tasks;
-    using Discord.Commands;
-    using Discord.WebSocket;
+    using global::Discord.Commands;
+    using global::Discord.WebSocket;
 
     public static class ContextExtensions
     {

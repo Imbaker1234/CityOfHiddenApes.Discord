@@ -1,11 +1,11 @@
-﻿namespace Discordia
+﻿namespace CityOfHiddenApes.Discord.Core
 {
     using System;
     using System.Collections.Generic;
-    using Discord;
-    using Discord.WebSocket;
+    using global::Discord;
+    using global::Discord.WebSocket;
 
-    public static class Discordia
+    internal static class Memory
     {
         public static Embed HelpAllEmbed { get; set; }
 

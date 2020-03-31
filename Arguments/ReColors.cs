@@ -1,4 +1,4 @@
-﻿namespace Discordia.Arguments
+﻿namespace CityOfHiddenApes.Discord.Core.Arguments
 {
     public enum ReColors
     {

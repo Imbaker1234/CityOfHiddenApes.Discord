@@ -1,12 +1,12 @@
-﻿namespace Discordia.Extensions
+﻿namespace CityOfHiddenApes.Discord.Core.Extensions
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Threading.Tasks;
-    using Discord;
-    using Discord.Rest;
-    using Discord.WebSocket;
+    using global::Discord;
+    using global::Discord.Rest;
+    using global::Discord.WebSocket;
 
     public static class ChannelExtensions
     {

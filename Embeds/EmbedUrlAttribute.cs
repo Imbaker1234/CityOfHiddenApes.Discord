@@ -1,4 +1,4 @@
-﻿namespace Discordia.Embeds
+﻿namespace CityOfHiddenApes.Discord.Core
 {
     using System;
 

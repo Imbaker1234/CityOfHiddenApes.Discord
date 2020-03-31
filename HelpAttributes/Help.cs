@@ -1,11 +1,18 @@
-﻿namespace Discordia.HelpAttributes
+﻿namespace CityOfHiddenApes.Discord.Core.HelpAttributes
 {
     using System.Collections.Generic;
     using System.Text;
-    using Discord;
-    using Discord.Commands;
+    using global::Discord;
+    using global::Discord.Commands;
 
-    public class Help
+    /// <summary>
+    /// Responsible for representing the Help Embeds in each
+    /// command. Calling the constructor for this method
+    /// loads the embed into memory for rapid retrieval
+    /// later via a string which matches the name of the
+    /// decorated Command.
+    /// </summary>
+    public class Help : Embeddable
     {
         private readonly IEnumerable<string> _acceptedParameters;
         private readonly string _desc;
@@ -27,7 +34,7 @@
                         _desc = helpAttribute.Content;
                     else if (helpAttribute.GetType() == typeof(ExampleUseAttribute))
                         exampleUsages.Add(helpAttribute.Content);
-                    else if (helpAttribute.GetType() == typeof(AcceptedParameterAttribute))
+                    else if (helpAttribute.GetType() == typeof(HelpParameter))
                         acceptedParameters.Add(helpAttribute.Content);
                     else if (helpAttribute.GetType() == typeof(ImageAttribute))
                         _image = helpAttribute.Content;
@@ -41,14 +48,14 @@
                 //TODO add other clauses here to capture name and aliases
             }
 
-            if (!Discordia.HelpEmbeds.ContainsKey(info.Name.ToLower()) && _desc != null)
+            if (!Memory.HelpEmbeds.ContainsKey(info.Name.ToLower()) && _desc != null)
             {
-                Discordia.HelpEmbeds.Add(info.Name.ToLower(), Embed());
-                Discordia.HelpAllList.Add($"**{info.Name}** - `{_desc}`");
+                Memory.HelpEmbeds.Add(info.Name.ToLower(), Embed());
+                Memory.HelpAllList.Add($"**{info.Name}** - `{_desc}`");
             }
         }
 
-        public Embed Embed()
+        private Embed Embed()
         {
             //Create Embed Container
             var eb = new EmbedBuilder();
@@ -71,7 +78,7 @@
             //Get the thumbnail url for our Embed. 
             eb.ThumbnailUrl =
                 _thumb ?? //Use one if its provided
-                Discordia.HelpThumbnailUrl ?? //Use the one from code config if not. 
+                Memory.HelpThumbnailUrl ?? //Use the one from code config if not. 
                 ""; //Use nothing if all else fails.
 
             //Ready a container for our examples.
@@ -101,7 +108,7 @@
             //Display the accepted parameters in the footer.
             eb.Footer = new EmbedFooterBuilder
             {
-                IconUrl = Discordia.HelpFooterIconUrl ?? "",
+                IconUrl = Memory.HelpFooterIconUrl ?? "",
                 Text = parameterBuilder.ToString()
             };
 

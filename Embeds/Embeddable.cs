@@ -1,4 +1,4 @@
-﻿namespace Discordia.Embeds
+﻿namespace CityOfHiddenApes.Discord.Core
 {
     using System;
     using System.Collections.Generic;
@@ -6,7 +6,7 @@
     using System.Reflection;
     using System.Text;
     using Arguments;
-    using Discord;
+    using global::Discord;
 
     public class Embeddable
     {

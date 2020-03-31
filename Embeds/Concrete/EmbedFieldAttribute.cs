@@ -1,9 +1,9 @@
-﻿namespace Discordia.Embeds
+﻿namespace CityOfHiddenApes.Discord.Core
 {
     using System;
     using System.Reflection;
     using Arguments;
-    using Discord;
+    using global::Discord;
 
     [AttributeUsage(AttributeTargets.Property)]
     public class EmbedFieldAttribute : EmbedAttribute

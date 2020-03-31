@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
-        <RootNamespace>Discordia</RootNamespace>
+        <RootNamespace>CityOfHiddenApes.Discord.Core</RootNamespace>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <PackageId>CityOfHiddenApes.Discord.Core</PackageId>
         <Title>CoH.Discord.Core</Title>

@@ -1,8 +1,8 @@
-﻿namespace Discordia.Embeds
+﻿namespace CityOfHiddenApes.Discord.Core
 {
     using System;
     using System.Reflection;
-    using Discord;
+    using global::Discord;
 
     public class EmbedFooterIconAttribute : EmbedUrlAttribute
     {

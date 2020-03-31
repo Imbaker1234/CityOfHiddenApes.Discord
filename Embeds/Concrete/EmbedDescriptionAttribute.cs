@@ -1,8 +1,8 @@
-﻿namespace Discordia.Embeds
+﻿namespace CityOfHiddenApes.Discord.Core.Embeds.Concrete
 {
     using System;
     using System.Reflection;
-    using Discord;
+    using global::Discord;
 
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Property)]
     public class EmbedDescriptionAttribute : EmbedStringValueAttribute

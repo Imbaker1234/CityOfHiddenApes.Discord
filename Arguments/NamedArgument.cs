@@ -1,6 +1,6 @@
-﻿namespace Discordia.Arguments
+﻿namespace CityOfHiddenApes.Discord.Core.Arguments
 {
-    using Discord.Commands;
+    using global::Discord.Commands;
 
     [NamedArgumentType]
     public class NamedArgument
