@@ -1,5 +1,10 @@
 # CityOfHiddenApes.Discord
-An open source library designed with a mind to make the creation of Bots in **Discord.NET** faster and more extensible.
+An open source library designed with a mind to make the creation of Bots in **Discord.NET** faster and more extensible. 
+
+### Find it on NuGet
+https://www.nuget.org/packages/CityOfHiddenApes.Discord.Core/
+
+### Or feel free to fork this project and make it your own!
 
 ## Help Menus
 Enjoy out of the box help menu's. All for the cost of a few intuitive decorating attributes.
