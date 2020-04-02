@@ -24,6 +24,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\ReColor\ReColor.csproj" />
       <ProjectReference Include="ReColor\ReColor.csproj" />
     </ItemGroup>
 
