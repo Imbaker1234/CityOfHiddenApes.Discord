@@ -1,10 +1,9 @@
-﻿namespace CityOfHiddenApes.Discord.Core.Arguments
+﻿namespace ReColor
 {
     using System;
     using System.Text;
-    using Exceptions;
-    using Extensions;
-    using global::Discord;
+    using CityOfHiddenApes.Discord.Core.Exceptions;
+    using Discord;
 
     public static class ReColor
     {
@@ -17,6 +16,7 @@
 
         public static Colors ToReColor(this string colorName)
         {
+            colorName = colorName.PascalCase();
             if (Enum.TryParse(colorName, out ReColor.Colors colorMatch)) return colorMatch;
             
             throw new ColorException(colorName);
@@ -30,7 +30,9 @@
         
         public static Color ToDiscordColor(this Colors color)
         {
-            return new Color((uint) color);
+            var d = System.Drawing.Color.FromArgb((int) color);
+            
+            return new Color(r: d.R, g: d.G, b: d.B);
         }
         
         public static string PascalCase(this string colorName)
@@ -38,12 +40,13 @@
             var split = colorName.Split(' ');
 
             var sb = new StringBuilder();
-            split.ForEach(sp =>
+            foreach (var sp in split)
             {
+                
                 var chars = sp.ToCharArray();
                 chars[0] = char.ToUpper(chars[0]);
                 sb.Append((char[]) chars);
-            });
+            }
             return sb.ToString();
         }
         

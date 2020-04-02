@@ -2,7 +2,7 @@
 {
     using System;
     using System.Text;
-    using Arguments;
+    using ReColor;
 
     public class ColorException : Exception
     {

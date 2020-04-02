@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core.csproj", "{E75F6ACA-900F-44A1-A84B-19F6914E0004}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReColor", "ReColor\ReColor.csproj", "{DB312ECF-6FAA-4791-9CCF-F89B7731144A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E75F6ACA-900F-44A1-A84B-19F6914E0004}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E75F6ACA-900F-44A1-A84B-19F6914E0004}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E75F6ACA-900F-44A1-A84B-19F6914E0004}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E75F6ACA-900F-44A1-A84B-19F6914E0004}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB312ECF-6FAA-4791-9CCF-F89B7731144A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB312ECF-6FAA-4791-9CCF-F89B7731144A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB312ECF-6FAA-4791-9CCF-F89B7731144A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB312ECF-6FAA-4791-9CCF-F89B7731144A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

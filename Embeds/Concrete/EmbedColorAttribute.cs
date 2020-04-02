@@ -4,11 +4,12 @@
     using System.Reflection;
     using Arguments;
     using global::Discord;
+    using ReColor;
 
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Property)]
     public class EmbedColorAttribute : EmbedAttribute
     {
-        public EmbedColorAttribute(ReColor.Colors value)
+        public EmbedColorAttribute(ReColor.ReColor.Colors value)
         {
             Value = value;
         }
@@ -17,11 +18,11 @@
         {
         }
 
-        public ReColor.Colors? Value { get; set; }
+        public ReColor.ReColor.Colors? Value { get; set; }
 
         public override EmbedBuilder ResolveProperty(object owner, PropertyInfo property, EmbedBuilder builder)
         {
-            ReColor.Colors setterEnum = (ReColor.Colors) (property.GetValue(owner) ?? Value ?? ReColor.Random());
+            ReColor.ReColor.Colors setterEnum = (ReColor.ReColor.Colors) (property.GetValue(owner) ?? Value ?? ReColor.ReColor.Random());
 
             builder.Color = setterEnum.ToDiscordColor();
             
