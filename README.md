@@ -20,6 +20,47 @@ https://www.nuget.org/packages/CityOfHiddenApes.Discord.Core/
 ![Highly detailed Embeds within easy reach.](https://i.ibb.co/71h95VQ/Embed-Attributes.png)
 
 
+## Expanded Colors with ReColor
+Enjoy access to the powerful new ReColor library. ReColor is available as a separate NuGet Package. (CityOfHiddenApes.ReColor)
+
+Allow your users to specify colors via simple string commands. 
+
+![Simple Commands](https://i.ibb.co/jLTQgHG/Discord-No9k-GG5-Em-X.png)
+
+Easy to use extension methods for quick conversions: 
+
+`String => ReColor => DiscordColor`
+
+`"Salmon".ToReColor.ToDiscordColor()`
+
+### Available Colors:
+
+Black, Navy, DarkBlue, MediumBlue,
+Blue, DarkGreen, Green, Teal, DarkCyan, DeepSkyBlue,
+DarkTurquoise, MediumSpringGreen, Lime, SpringGreen,
+Cyan, MidnightBlue, DodgerBlue, LightSeaGreen, ForestGreen,
+SeaGreen, DarkSlateGray,LimeGreen, MediumSeaGreen, Turquoise,
+RoyalBlue, SteelBlue, DarkSlateBlue, MediumTurquoise, Indigo,
+DarkOliveGreen, CadetBlue, CornflowerBlue, MediumAquamarine,
+DimGray, SlateBlue, OliveDrab, SlateGray, LightSlateGray,
+MediumSlateBlue, LawnGreen, Chartreuse, Aquamarine, Maroon,
+Purple, Olive, Gray, SkyBlue, LightSkyBlue, BlueViolet,
+DarkRed, DarkMagenta, SaddleBrown, DarkSeaGreen, LightGreen,
+MediumPurple, DarkViolet, PaleGreen, DarkOrchid, YellowGreen,
+Sienna, Brown, DarkGray, LightBlue, GreenYellow, PaleTurquoise,
+LightSteelBlue, PowderBlue, Firebrick, DarkGoldenrod,
+MediumOrchid, RosyBrown, DarkKhaki, Silver, MediumVioletRed,
+IndianRed, Peru, Chocolate, Tan, LightGray, Thistle, Orchid,
+Goldenrod, PaleVioletRed, Crimson, Gainsboro, Plum, BurlyWood,
+LightCyan, Lavender, DarkSalmon, Violet, PaleGoldenrod, LightCoral, 
+Khaki, AliceBlue, Honeydew, Azure, SandyBrown, Wheat, Beige,
+WhiteSmoke, MintCream, GhostWhite, Salmon, AntiqueWhite, Linen,
+LightGoldenrodYellow, OldLace, Red, Fuchsia, DeepPink, OrangeRed,
+Tomato, HotPink, Coral, DarkOrange, LightSalmon, Orange, LightPink, 
+Pink, Gold, PeachPuff, NavajoWhite, Moccasin, Bisque, MistyRose, 
+BlanchedAlmond, PapayaWhip, LavenderBlush, SeaShell, Cornsilk
+LemonChiffon, FloralWhite, Snow, Yellow, LightYellow. Ivory, White
+
 
 ## MIT License
 
