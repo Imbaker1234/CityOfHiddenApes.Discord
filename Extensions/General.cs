@@ -4,7 +4,6 @@
     using System.Collections.Generic;
     using System.Text;
     using Arguments;
-    using Exceptions;
     using global::Discord;
 
     public static class General
