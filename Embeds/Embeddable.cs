@@ -1,6 +1,7 @@
 ﻿namespace CityOfHiddenApes.Discord.Core
 {
     using System;
+    using System.Collections;
     using System.Collections.Generic;
     using System.Linq;
     using System.Reflection;
@@ -35,7 +36,18 @@
                 if (customAttribute.ColumnNumber == number)
                 {
                     var val = property.GetValue(this) ?? "-";
-                    sb.AppendLine($"{Parser.DisplayPascalProperty(property.Name)}: {val}");
+                    if (val is ICollection collectionVal)
+                    {
+                        sb.AppendLine($"{property.Name}:");
+                        foreach (var o in collectionVal)
+                        {
+                            sb.AppendLine($"  {o}");
+                        }
+                    }
+                    else
+                    {
+                        sb.AppendLine($"{Parser.DisplayPascalProperty(property.Name)}: {val}");
+                    }
                 }
 
             return sb.ToString();

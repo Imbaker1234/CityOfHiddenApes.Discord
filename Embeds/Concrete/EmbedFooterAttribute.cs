@@ -7,6 +7,14 @@
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Property)]
     public class EmbedFooterAttribute : EmbedStringValueAttribute
     {
+        public EmbedFooterAttribute(string value) : base(value)
+        {
+        }
+
+        public EmbedFooterAttribute()
+        {
+        }
+
         public override EmbedBuilder ResolveProperty(object owner, PropertyInfo property, EmbedBuilder builder)
         {
             if (builder.Footer is null) builder.Footer = new EmbedFooterBuilder();

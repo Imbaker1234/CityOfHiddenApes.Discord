@@ -10,6 +10,8 @@
         <Description>A wrapper library for Discord.NET. Supplying easy access to extensible Help Commands and rich Embed objects via annotations.</Description>
         <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
         <PackageIconUrl>https://i.ibb.co/z8px3T7/02-g.png</PackageIconUrl>
+        <LangVersion>8</LangVersion>
+        <PackageVersion>1.0.1</PackageVersion>
     </PropertyGroup>
 
     <ItemGroup>
