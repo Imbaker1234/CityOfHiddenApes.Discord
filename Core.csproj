@@ -12,6 +12,10 @@
         <PackageIconUrl>https://i.ibb.co/z8px3T7/02-g.png</PackageIconUrl>
         <LangVersion>8</LangVersion>
         <PackageVersion>1.0.1</PackageVersion>
+        <Copyright>2020</Copyright>
+        <PackageProjectUrl>https://github.com/Imbaker1234/CityOfHiddenApes.Discord</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/Imbaker1234/CityOfHiddenApes.Discord</RepositoryUrl>
+        <PackageTags>Discord.NET, Discord</PackageTags>
     </PropertyGroup>
 
     <ItemGroup>
