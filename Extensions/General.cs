@@ -3,8 +3,8 @@
     using System;
     using System.Collections.Generic;
     using System.Text;
-    using Arguments;
     using global::Discord;
+    using Newtonsoft.Json;
 
     public static class General
     {
@@ -29,6 +29,11 @@
         public static void ForEach<T>(this IEnumerable<T> enumerable, Action<T> action)
         {
             foreach (var item in enumerable) action.Invoke(item);
+        }
+
+        public static EmbedBuilder Prototype(this EmbedBuilder builder)
+        {
+            return JsonConvert.DeserializeObject<EmbedBuilder>(JsonConvert.SerializeObject(builder));
         }
     }
 }

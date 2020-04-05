@@ -1,4 +1,4 @@
-﻿namespace CityOfHiddenApes.Discord.Core.Arguments
+﻿namespace CityOfHiddenApes.Discord.Core
 {
     using global::Discord.Commands;
 
